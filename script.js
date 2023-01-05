@@ -1,78 +1,103 @@
-//В программе объявлена переменная word со строковым значением. Используя цикл, разверните слово.
-let word = "Aigul";
-let result = "";
-// for (let i = 0; i < word.length; i++) {
-//     result += word[(word.length - 1) - i]; 
-// }
+// Задача 1:Дан многомерный массив arr:
+// Выведите с его помощью слово 'голубой'
+const arr = {
+  'ru':['голубой', 'красный', 'зеленый'],
+  'en':['blue', 'red', 'green'],
+};
+console.log(arr.ru[0]);
 
-for (let i = word.length - 1; i >= 0; i--) {
-    result += word[i] ;
+
+// Задача 2: Дан объект obj с ключами Коля, Вася, Петя с элементами '200', '300', '400'. 
+// С помощью цикла выведите на экран строки такого формата: 'Коля - зарплата 200 долларов.'.
+const obj ={
+    Коля: '200',
+    Вася: '300',
+    Петя: '400',
 }
-console.log(result);
+for (key in obj){
+    console.log([key] + ' - зарплата ' + obj[key] + ' долларов.');
+}
 
-//Напишите функцию, которая в качестве аргументов получает слово и определяет, является ли оно палиндромом. Если да, функция возвращает true, в ином случае false.
 
-function palindrom(word) {
-    for (let i = 0, j = word.length - 1; i < word.length; i++, j-- ){
-        if (word[i] != word[j]) 
-        return false;
+
+// Задача 3: Дан объект {js:['jQuery', 'Angular'], php: 'hello', css: 'world'}. Выведите с его помощью слово 'jQuery'.
+const object = {
+    js: ['jQuery', 'Angular'], 
+    php: 'hello', 
+    css: 'world',
+}
+console.log(object.js[0]);
+
+// Задача 4: Создайте двухмерный массив. Первые два ключа - это 'ru' и 'en'. Пусть первый ключ содержит элемент, 
+// являющийся массивом названий дней недели по-русски, а второй - по-английски. 
+// Выведите с помощью этого массива понедельник по-русски и среду по английский (пусть понедельник - это нулевой день).
+
+const array = {
+    'ru':['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье',],
+    'en':['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
+  };
+  console.log(array.ru[0], array.en[2]);
+
+// Задача 5:  Создайте объект с днями недели. Ключами в нем должны служить номера дней от начала недели (понедельник - первый и т.д.). Выведите на экран текущий день недели.
+
+let week = {
+    первый: 'понедельник',
+    второй: 'вторник',
+    третий: 'среда',
+    четвертый: 'четверг',
+    пятый: 'пятница',
+    шестой: 'суббота',
+    седьмой: 'воскресенье',
+}
+console.log(week.третий);
+
+// Задача 6: Написать функцию, которая получает в качестве аргумента число и строку, где число обозначает сколько раз должна быть добавлена эта строка в объект. Возвращает массив из этих строк. 
+// Например: передаем строку “dog” и цифру 3, в результате мы получаем {"dog0" : "dog0", "dog1": "dog1", "dog2": "dog2"}.
+function creatArray(string, number) {
+    let resultArr = [];
+    for (let i = 0; i < number; i++) {
+       resultArr.push(string + i);
     }
-    return true
-}
-console.log(palindrom("заказ"));
-console.log(palindrom("шалаш"));
-console.log(palindrom("привет"));
-
-
-//Используя цикл, выведите в консоль сумму чисел из диапазона значений от 0 до 50 кратные 5.
-
-let sum = 0;
-for (let num = 0; num <= 50; num++) {
-   if (num % 5 == 0) sum += num
-}
-console.log(sum); 
-
-//Написать цикл, который выводит только названия товаров
-const products = [
-{
-    title: "AlfaRomeo",
-    price: 5000,
-},
-{
-    title: "Mercedes",
-    price: 9000,
-},
-{
-    title: "Fiat",
-    price: 1000,
-},
-{
-    title: "Opel",
-    price: 3000,
-},
-]
-
-for (let i = 0; i < products.length; i++) {
-    console.log(products[i].title);
-    
+    return resultArr;
 }
 
+console.log(creatArray("dog", 6));
 
 
-//Написать цикл, который выводит для каждого товара стоку по маске “<название> (<цена>)”
 
-for (let i = 0; i < products.length; i++) {
-    console.log(
-        `${products[i].title} (${products[i].price})`)
+
+
+// Задача 7: Написать функцию, которая получает в качестве аргумента массив. для расчета суммы четных чисел в массиве. 
+// Так же написать  новую функцию для расчета суммы нечетных чисел в массиве. 
+// Написать функцию, которая принимает как аргумент две полученные суммы и выводит наибольшее из них.
+let array1 = [1,2,3,4,5,6,7,8,9,10] 
+function sumEven(array) {
+    let sum = 0;
+for (let i=0; i < array.length; i++){
+    if (array[i] % 2 == 0) sum += array[i];
+}
+return(sum); 
 }
 
-//Написать функцию, которая получает в качестве аргумента массив из объектов и возвращает объект с самым дорогим товаром.
-let priceMax = 0;
-for (let i = 0; i < products.length; i++) {
-    if(products[i].price > priceMax){
-        priceMax = products[i].price
-    }
+function sumOdd(array) {
+    let sum = 0;
+for (let i=0; i < array.length; i++){
+    if (array[i] % 2 != 0) sum += array[i];
 }
-for (let i = 0; i < products.length; i++) {
-if (priceMax === products[i].price) console.log(products[i]);
+return(sum); 
 }
+sumEven(array1)
+sumOdd(array1)
+
+function result(num1, num2) {
+    if (num1 > num2) {console.log(num1);  
+    } else console.log(num2);
+}
+
+result(sumEven(array1), sumOdd(array1))
+
+// Задача 8: Напишите функцию для преобразования градусов Цельсия в градусы Фаренгейта. (Например: console.log(function(0)) => 32);
+function converter(celsius) {
+    console.log(celsius * 9 / 5 + 32);
+}
+converter(0)
