@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form,
+.product {
+  margin: 50px auto;
+  max-width: 700px;
+  width: 100%;
+  background-color: rgba(33, 196, 136, 0.625);
+  padding: 60px;
+  border-radius: 20px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(79, 77, 77);
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+button {
+  background-color: rgb(118, 161, 75);
+  border-radius: 10px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  /* margin-top: 50px; */
+}
+
+.homework{
+  margin: 50px auto;
+  max-width: 700px;
+  width: 100%;
+  background-color: rgba(12, 175, 164, 0.763);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#sum,
+.btnPassword{
+  background-color: rgba(36, 29, 133, 0.615);
+  color: rgb(99, 180, 188);
+  border-radius: 10px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.password{
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.btnPassword,
+.password{
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  justify-content: space-between;
+
+}
