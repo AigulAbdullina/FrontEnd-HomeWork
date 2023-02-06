@@ -1,0 +1,25 @@
+.table {
+    display: grid;
+    grid-template: repeat(4, 100px) / repeat(9, 100px);
+    gap: 3px;
+    float: left;
+}
+
+div{
+    background-color: rgb(5, 34, 36);
+    border: 1px solid blue;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 20px;
+}
+
+p{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+}
+div:nth-child(3) {
+    grid-column: 3 / 7;
+}
