@@ -1,0 +1,32 @@
+.main {
+    display: grid;
+    grid-template: 100px 300px 100px / 300px 150px 200px;
+    margin: 50px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.first-img {
+    grid-area: 1 / 1 / 4 / 3;
+} 
+
+.second-text {
+    border-radius: 8px;
+    background-color: rgba(95, 95, 95, 0.907);
+    grid-area: 2 / 2 / 3 / 4;
+    color: white;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: rgba(95, 95, 95, 0.907);
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+   }
