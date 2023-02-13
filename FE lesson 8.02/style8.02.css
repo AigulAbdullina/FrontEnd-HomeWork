@@ -1,0 +1,350 @@
+/* media - queries */
+/* all, print, screen, speech */
+/* 
+@media screen and () and (); */
+ /* div {
+    height: 400px;
+    border: 1px solid red;
+ } */
+
+ /* @media screen and (min-width: 1240px) {
+    div{
+        background-color: green;
+    }
+ } */
+/* 840 -1240px blue */
+ /* @media screen and (min-width: 840px) and (max-width:1240px) {
+   div{
+      background-color: blue;
+  }
+ } */
+
+ /* 640 -840px orange */
+ /* @media screen and (min-width: 640px) and (max-width:840px) {
+   div{
+      background-color: orange;
+  }
+ } */
+  /* < 640px black */
+  /* @media screen and (max-width:640px) {
+   div{
+      background-color: black;
+  }
+ } */
+
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .wrapper {
+   max-width: 1110px;
+   margin: 0 auto;
+ }
+
+/* header start---------------- */
+
+ header{
+   min-height: 740px;
+   background-image: url(./img/BB29DBED-0FE3-4650-9B28-7EA4FA91017D.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 35px;
+   position: relative;
+ }
+
+ .h1 {
+   max-width: 734px;
+   text-align: center;
+   font-family: "Oswald";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+ }
+
+ .header-h4 {
+   max-width: 734px;
+   font-family: "Oswald";
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+ }
+
+ @media screen and (min-width: 610px) and (max-width: 745px){
+ .h1 {
+   font-size: 55px;
+   }
+ }
+ @media screen and (max-width: 610px){
+   .h1 {
+      font-size: 43px;
+    }
+ }
+ /* header end----------- */
+
+ /* about start */
+
+ .about {
+   min-height: 300px;
+   background-color:  #F7F7F7;
+   position: absolute;
+   top: 590px;
+   left: 50%;
+   transform: translate(-50%);
+ }
+
+ .about-items {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   padding: 57px 130px;
+
+ }
+
+ .about-item {
+   width: 190px;
+   text-align: center;
+   font-family: "Oswald";
+   font-weight: 500;
+ }
+
+ .about-h4 {
+   font-size: 72px;
+   line-height: 107px;
+   color: #f7654a;
+   margin-bottom: 25px;
+ }
+ .about-h5 {
+      font-size: 36px;
+      line-height: 53px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 10px;
+ }
+ .about-p {
+      font-size: 18px;
+      line-height: 27px;
+      color: #999999;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .about-items {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media screen and (max-width: 780px) {
+      .about-items {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* about end------------ */
+  
+
+    /* project start--------- */
+
+    .projects {
+      margin-top: 250px;
+      margin-bottom: 88px;
+    }
+
+    .projects-h2 {
+      margin-bottom: 60px;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 53px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #404149;
+    }
+
+    .projects-items {
+      display: flex;
+      gap: 30x;
+    }
+
+    .project-item {
+      max-width: 350px;
+    }
+
+    .project-img {
+      margin-bottom: 45px;
+    }
+
+    .line {
+      margin-bottom: 15px;
+      width: 55px;
+      height: 6px;
+      background: #F7654A;
+    }
+
+    .projects-h3 {
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #404149;
+      margin-bottom: 20px;
+    }
+
+    .project-p {
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: #999999;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .projects {
+         margin-top: 445px;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      .projects {
+         margin-top: 960px;   
+      }
+      .projects-items {
+         flex-direction: column;
+         align-items: center;
+      }
+    }
+/* project end------------- */
+
+/* project line orange start--------- */
+
+.projects-line {
+  background-color: #F7654A;
+  height: 180px;
+}
+
+.projects-line-content { 
+  max-width: 1110px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.h3 {
+margin-top: 30px;
+margin-bottom: 20px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 71px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.h3-p {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+.btn{
+width: 175px;
+height: 50px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.05em;
+color: #000000;
+margin-top: 73px;
+margin-bottom: 60px;
+}
+
+@media screen and (min-width: 610px) and (max-width: 745px){
+  .h3 {font-size: 38px;}
+  .h3-p {font-size: 13px;}
+  }
+  @media screen and (max-width: 610px){
+    .h3 {font-size: 20px;}
+    .h3-p {font-size: 10px;}
+  }
+/* project line orange end--------- */
+
+
+/* whatDoing start --------- */
+
+.whatDoing {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.whatDoing-title {
+  margin-top: 100px;
+  margin-bottom: 66px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.whatDoing-elements {
+  display: grid;
+  grid-template: repeat(3, 250px) / repeat(3, 350px);
+  gap: 30px;
+}
+
+.whatDoing-element {
+  background: #F7F7F7;
+  justify-content: center;
+  text-align: center;
+}
+
+.whatDoing-element img {
+  margin: 60px 145px 30px 145px;
+}
+
+.whatDoing-element p {
+margin: 0px 92px 59px 86px ;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 31px;
+text-align: center;
+letter-spacing: 0.02em;
+color: #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  .whatDoing-elements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .whatDoing-elements {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* whatDoing end --------- */
