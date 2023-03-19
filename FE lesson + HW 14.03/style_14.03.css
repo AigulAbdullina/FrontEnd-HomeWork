@@ -1,0 +1,52 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.buttons button{
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(17, 117, 65, 0.299);
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.posts{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 20px;
+}
+
+.item{
+  font-weight: 300;
+  text-align: center;
+  background-color: rgba(241, 251, 134, 0.439);
+
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
