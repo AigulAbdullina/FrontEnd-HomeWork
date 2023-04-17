@@ -1,0 +1,66 @@
+.content2 {
+    padding: 126px 0px 120px 80px;
+}
+.head_secPart {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 23px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        color: $main-blue;
+    }
+    .line2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 3px;
+        background-color: $main-yellow;
+    }
+}
+.secPart {
+    display: flex;
+    margin-top: 50px;
+
+    .title{
+        padding-top: 40px;
+        padding-left: 17px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.32px;
+        color: $main-blue;
+    }
+    .price{
+        padding: 7px 0px 30px 17px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: $main-yellow;
+    }
+    .description {
+        padding: 0px 48px 13px 17px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: $text-grey;
+    }
+    .printed {
+        padding-left: 17px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $main-blue;
+    }
+}

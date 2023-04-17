@@ -1,0 +1,76 @@
+.content4 {
+    width: 100%;
+    // padding: 125px 75px;
+    h4 {
+        text-align: center;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        color: $main-blue;
+    }
+    .line4 {
+        margin: 23px auto 50px auto;
+        width: 50px;
+        height: 3px;
+        background-color: $main-yellow;
+    }   
+}
+.ul_part4{
+    display: flex;
+    margin-bottom: 125px;
+    list-style-type: none;
+    text-align: center;
+    .title_part4 {
+        margin: 22px auto 16px auto ;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $main-blue;
+    }
+    .descr_part4 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: $text-grey;
+    }
+}
+
+.blue_part {
+    display: flex;
+    padding: 70px;
+    background-color: $main-blue;
+}
+.fourPart_col1{
+    padding: 50px 100px 0px 0px;
+    
+    .h4_1 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 54px;
+        text-transform: capitalize;
+        color: $text-white;
+    }
+
+    .text_part4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: $text-blue;
+    }
+
+}
+.line4_1 {
+    margin: 25px 0px 25px 0px;
+    width: 50px;
+    height: 3px;
+    background-color: $main-yellow;}

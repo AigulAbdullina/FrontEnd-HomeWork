@@ -1,0 +1,64 @@
+#six_part {
+    margin-top: 225px;
+    background: $back-grey2;
+}
+h6 {
+    padding-top: 80px;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $main-blue;
+}
+.line6 {
+    margin: 23px auto 70px auto;
+    width: 50px;
+    height: 3px;
+    background-color: $main-yellow;
+}
+.content6 {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+}
+.item_part6 {
+    background-color: $back-white;
+
+    .tit_part6 {
+        margin: 25px 30px 20px 30px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0.24px;
+        color: $main-blue;
+    }
+    .descr_part6 {
+        margin: 25px 30px 20px 30px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $text-grey;
+    }
+    .data_part6 {
+        margin: 25px 30px 20px 30px;
+        text-align: right;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $main-blue;
+    }
+
+}

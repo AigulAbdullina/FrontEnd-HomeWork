@@ -1,0 +1,92 @@
+.content1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include medium-screen {
+        grid-template-columns: 1fr;
+    }
+    background-color: $main-blue;
+    padding-left: 70px;
+}
+.welcom {
+    margin-top: 120px;
+    display: flex;
+    .line{
+        padding-top: 15px;
+        width: 35px;
+        height: 2px;
+        background-color: $main-yellow;
+
+    }
+    p {
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            color: $text-white;
+            margin-left: 14px;
+    }  
+}
+.h1 {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 78px;
+    letter-spacing: 1.3px; 
+    color: $text-white;
+}
+
+.col-1_text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text-blue;
+
+}
+.col-1_btn {
+    display: flex;
+    margin-top: 42px;
+    gap: 51px;
+        .p_col-1_btn {
+        padding-top: 10px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $text-white;
+        text-decoration: underline;
+        }
+}
+.col-1_ul {
+    margin-top: 47px;
+    display: flex;
+    gap: 70px;
+        li::marker {
+            color: $main-yellow;
+            font-size: 20px;
+        }
+    .li1 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.48px;
+        color: $text-white;
+    }
+    .li2 {
+        margin-top: 12px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        color: $text-blue;
+    }
+}

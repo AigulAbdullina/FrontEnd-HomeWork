@@ -1,0 +1,109 @@
+.content3 {
+    display: flex;
+    background-color: $back-grey;
+}
+.thirdPart_col1{
+    display: grid;
+    grid-template: 50px 590px 50px / 30px 520px 50px;
+    margin: 100px 100px 140px 40px;
+    .border {
+        grid-area: 2 / 2 / 3 / 4;
+        margin: 30px;
+        width: 545px;
+        height: 620px;
+        background: none;
+        border: 10px solid $main-yellow;
+    }
+    .foto_sec3 
+        {grid-area: 1 / 1 / 4 / 3;}
+
+}
+
+.head_thirdPart {
+    text-align: left;
+    h3{
+        margin-top: 100px;
+        margin-bottom: 23px;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: $main-blue;
+        }   
+    .line3 {
+        width: 50px;
+        height: 3px;
+        background-color: $main-yellow;
+    }    
+}
+.thirdPart_descr {
+    margin: 33px 116px 33px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+    color: $text-grey;
+}
+
+.statistics {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 50px;
+    .li_1{padding-right: 30px;}
+    .li_2{
+        border-right: 2px solid $main-yellow;
+        border-left: 2px solid $main-yellow;
+        padding: 0px 50px 0px 30px;
+    }
+    .li_3{padding-left: 30px;}
+    .num {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 77px;
+        color: $main-blue;
+        
+    }
+    .text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: $text-grey;
+    }
+    
+}
+
+.contact {
+    display: flex;
+    width: 484px;
+    height: 161px;
+    background-color: $main-blue;
+    img {
+        padding: 15px 40px 16px 20px;
+    }
+}
+.name{
+    margin-top: 37px;
+    margin-bottom: 10px;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: $main-yellow;
+}
+.info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.19px;
+    color: $text-blue;
+}
